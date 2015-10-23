@@ -1,6 +1,8 @@
-# Instagravy (Android bootcamp week 1 project)
+# Instagravy
 
 **Instagravy** is an Android app for browsing popular Instagram photos.
+
+*(CodePath Android bootcamp week 1 project)*
 
 Submitted by: **Ryan Kannegiesser**
 
@@ -24,21 +26,20 @@ The following **optional** features are implemented:
 * [ ] **Bonus**: Allow user to view all comments for an image within a separate activity or dialog fragment
 * [ ] **Bonus**: Allow video posts to be played in full-screen using the VideoView
 
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-**TODO:** add walkthrough
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
 ## Notes
 
 To enable development without a connection, I created an `InstagramClient` interface with two implementations,
 `NetworkInstagramClient` and `FakeInstagramClient`. The fake one reads the API response from a local JSON
 asset file. The image URLs in the local JSON file also point to local images. In a real app, I'd need to
 figure out how to exclude those assets from the APK. The fake client could also be useful in unit tests.
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://i.imgur.com/obTzR1q.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## License
 
