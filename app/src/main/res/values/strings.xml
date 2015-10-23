@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Instagravy</string>
+    <string name="instagram_fetch_failure">Sorry, unable to fetch photos.</string>
+</resources>
