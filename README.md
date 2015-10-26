@@ -18,7 +18,7 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 * [ ] For each photo displayed, user can see relative timestamp, like count, and user profile image
-* [ ] **Advanced**: Add pull-to-refresh for popular stream with SwipeRefreshLayout
+* [x] **Advanced**: Add pull-to-refresh for popular stream with SwipeRefreshLayout
 * [ ] **Advanced**: Show latest comment for each photo (bonus: show last 2 comments)
 * [ ] **Advanced**: Display each user profile image using a RoundedImageView
 * [ ] **Advanced**: Display a nice default placeholder graphic for each image during loading (read more about Picasso)
@@ -27,6 +27,11 @@ The following **optional** features are implemented:
 * [ ] **Bonus**: Allow video posts to be played in full-screen using the VideoView
 
 ## Notes
+
+When implementing pull-to-refresh, I took care to improve the user experience by removing already
+shown photos from the set of newly fetched photos. To help with this, I overrode `equals` and
+`hashCode` in the `Photo` class to be based on the photo's Instagram id. The app also reverse sorts
+each set of fetched photos by created time and inserts it at the beginning of the stream.
 
 To enable development without a connection, I created an `InstagramClient` interface with two implementations,
 `NetworkInstagramClient` and `FakeInstagramClient`. The fake one reads the API response from a local JSON
