@@ -16,7 +16,7 @@ import java.util.List;
 public class PhotosAdapter extends ArrayAdapter<Photo> {
 
     public PhotosAdapter(Context context, List<Photo> photos) {
-        super(context, android.R.layout.simple_list_item_1, photos);
+        super(context, 0, photos);
     }
 
     @Override
