@@ -17,12 +17,12 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [ ] For each photo displayed, user can see relative timestamp, like count, and user profile image
+* [x] For each photo displayed, user can see like count and user profile image (relative timestamp not implemented)
 * [x] **Advanced**: Add pull-to-refresh for popular stream with SwipeRefreshLayout
 * [ ] **Advanced**: Show latest comment for each photo (bonus: show last 2 comments)
-* [ ] **Advanced**: Display each user profile image using a RoundedImageView
+* [x] **Advanced**: Display each user profile image using a RoundedImageView
 * [ ] **Advanced**: Display a nice default placeholder graphic for each image during loading (read more about Picasso)
-* [ ] **Advanced**: Improve the user interface through styling and coloring
+* [x] **Advanced**: Improve the user interface through styling and coloring
 * [ ] **Bonus**: Allow user to view all comments for an image within a separate activity or dialog fragment
 * [ ] **Bonus**: Allow video posts to be played in full-screen using the VideoView
 
@@ -42,7 +42,7 @@ figure out how to exclude those assets from the APK. The fake client could also 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/obTzR1q.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/WNxHEWy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
