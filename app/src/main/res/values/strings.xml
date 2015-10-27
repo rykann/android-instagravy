@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Instagravy</string>
     <string name="instagram_fetch_failure">Sorry, unable to fetch photos.</string>
+    <string name="likes_count">%s likes</string>
 </resources>

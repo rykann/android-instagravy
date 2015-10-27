@@ -9,6 +9,8 @@ public class Photo {
     public String caption;
     public String url;
     public String userName;
+    public String userProfileImageUrl;
+    public int likesCount;
     public int createdAt;
 
     @Override
@@ -35,7 +37,10 @@ public class Photo {
             photo.caption = captionObj.getString("text");
         }
         photo.url = json.getJSONObject("images").getJSONObject("standard_resolution").getString("url");
-        photo.userName = json.getJSONObject("user").getString("username");
+        JSONObject userObj = json.getJSONObject("user");
+        photo.userName = userObj.getString("username");
+        photo.userProfileImageUrl = userObj.getString("profile_picture");
+        photo.likesCount = json.getJSONObject("likes").getInt("count");
         photo.createdAt = json.getInt("created_time");
         return photo;
     }
