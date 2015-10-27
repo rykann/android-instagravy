@@ -6,7 +6,7 @@
 
 Submitted by: **Ryan Kannegiesser**
 
-Time spent: **11** hours
+Time spent: **18** hours
 
 ## User Stories
 
@@ -20,7 +20,7 @@ The following **optional** features are implemented:
 * [x] For each photo displayed, user can see like count and user profile image (relative timestamp not implemented)
 * [x] **Advanced**: Add pull-to-refresh for popular stream with SwipeRefreshLayout
 * [ ] **Advanced**: Show latest comment for each photo (bonus: show last 2 comments)
-* [x] **Advanced**: Display each user profile image using a RoundedImageView
+* [x] **Advanced**: Display each user profile image using a [CircleImageView](https://github.com/hdodenhof/CircleImageView)
 * [ ] **Advanced**: Display a nice default placeholder graphic for each image during loading (read more about Picasso)
 * [x] **Advanced**: Improve the user interface through styling and coloring
 * [ ] **Bonus**: Allow user to view all comments for an image within a separate activity or dialog fragment
